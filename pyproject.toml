@@ -10,7 +10,13 @@ python = "^3.12"
 flask = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
+flask-jwt-extended = "*"
+pytest = "*"
+pytest-mock = "*"
 
+[tool.pytest.ini_options]
+addopts = "-ra -vvv"
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core"]
